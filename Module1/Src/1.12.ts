@@ -20,8 +20,8 @@
       }
 
       else if(typeof value ==="string"){
-         const [result,unit]=value.split(' ')
-         const convertedSpeed=(parseFloat(result)*1000)/3600;
+         // const [result,unit]=value.split(' ') --->Right Way
+         const convertedSpeed=(parseFloat(value)*1000)/3600; //--> Also Right Way
          console.log(`The Speed is ${convertedSpeed} ms^-1`);
       }
       else{
