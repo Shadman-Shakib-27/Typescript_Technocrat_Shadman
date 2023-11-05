@@ -25,8 +25,8 @@
          ...student,course
       }
    }
-   const res10=addCourseToStudent({name:"Shadman",age:20,devType:"NLWD"})
-   const res11=addCourseToStudent({name:"Shakib",age:20,devType:"NLWDM"})
-   console.log(res10,res11);
+   const student1=addCourseToStudent({name:"Shadman",age:20,devType:"NLWD"})
+   const student2=addCourseToStudent({name:"Shakib",age:20,devType:"NLWDM"})
+   console.log(student1,student2);
    //
 }
