@@ -35,6 +35,6 @@
     type AreaStrings <T>={
       [key in keyof T]:T[key];
     }
-
+ 
    //
 }

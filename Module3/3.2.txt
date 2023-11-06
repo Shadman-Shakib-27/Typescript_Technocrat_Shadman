@@ -1,0 +1,62 @@
+The provided TypeScript code defines two classes, Car and Audi, which demonstrate the concept of inheritance. Let's break down the code step by step:
+
+//-----------First-----------//
+Car Class:
+
+class Car {
+  Color: string;
+
+  constructor(color: string) {
+    this.Color = color;
+  }
+}
+
+In the Car class, there is a property Color and a constructor that takes a color parameter. Inside the constructor, the Color property of the Car class is initialized with the value passed as the color parameter.
+
+
+//-----------END-----------//
+
+//-----------First-----------//
+
+Audi Class (Inheritance):
+
+class Audi extends Car {
+  Price: number;
+
+  constructor(color: string, price: number) {
+    super(color);  // Calls the constructor of the base class (Car)
+    this.Price = price;
+  }
+
+  display(): void {
+    console.log("Color of Audi car: " + this.Color);
+    console.log("Price of Audi car: " + this.Price);
+  }
+}
+The Audi class extends the Car class, which means it inherits all the properties and methods from the Car class. It adds a new property Price and has its own constructor and display method.
+
+In the Audi class constructor, super(color); is called to invoke the constructor of the base class (Car) with the provided color. This initializes the Color property of the Car class.
+The Price property is initialized with the value passed as the price parameter.
+Object Creation and Method Invocation:
+
+
+//-----------END-----------//
+
+
+//-----------First-----------//
+
+let obj = new Audi(" Black", 8500000 );
+obj.display();
+
+An object obj is created by instantiating the Audi class with the values "Black" for color and 8500000 for price.
+
+The display method of the Audi class is called on the obj object. This method logs the color and price of the Audi car to the console.
+
+//-----------END-----------//
+
+
+In summary, this code demonstrates inheritance in TypeScript. The Audi class extends the Car class, inherits the Color property, and adds its own Price property and display method. When you create an Audi object, it can access properties and methods from both the Car and Audi classes.
+
+
+
+

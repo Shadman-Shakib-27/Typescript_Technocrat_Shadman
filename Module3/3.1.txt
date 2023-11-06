@@ -1,0 +1,33 @@
+The code you provided is written in TypeScript and defines a class Animal and an object dog of that class. Let's break down the code step by step:
+
+//--------------------------------------//
+Class Definition:
+
+class Animal {
+  constructor(public name: string, public species: string, public sound: string) {}
+
+  makeSound() {
+    console.log(`This ${this.name} Says ${this.sound}`);
+  }
+}
+Here, a class named Animal is defined with a constructor that takes three parameters: name, species, and sound. These parameters are marked as public, which means that they are not only parameters for the constructor but also become properties of the Animal class. The class also has a method called makeSound that logs a message to the console using the name and sound properties.
+
+//--------------------------------------//
+
+Object Creation:
+
+const dog = new Animal("German Shepard Zoo", "Dog", "Ghew Ghew");
+
+An object named dog is created by instantiating the Animal class. The constructor is called with the provided values for name, species, and sound, and a new Animal object is created with those property values. The dog object will have properties like name, species, and sound based on the constructor parameters.
+
+//--------------------------------------//
+
+Method Invocation:
+
+dog.makeSound();
+
+After creating the dog object, the makeSound method is invoked on the dog object. This method logs a message to the console that includes the name and sound properties specific to the dog object.
+
+//--------------------------------------//
+
+In summary, this code demonstrates the creation of a class Animal with properties and a method. An object dog of that class is created with specific property values, and then the makeSound method is called on the dog object, which logs a message indicating what the dog says.
