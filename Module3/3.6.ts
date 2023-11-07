@@ -32,9 +32,8 @@
 
   // goribManusherAccount.deposit = 0;
   // goribManusherAccount.addDeposit(20); // function call korte hsse
-  goribManusherAccount.deposit = 50;
   // const myBalance = goribManusherAccount.getBalance(); // function call korte hsse
-
+  goribManusherAccount.deposit = 50;
   const myBalance = goribManusherAccount.balance; // property er mto kore
   console.log(myBalance);
 

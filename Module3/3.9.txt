@@ -1,0 +1,13 @@
+The provided TypeScript code demonstrates the concept of abstraction using both an interface and an abstract class. Abstraction is a fundamental concept in object-oriented programming that allows you to define a common interface while hiding the internal details of an implementation. This promotes code reusability and helps manage complexity.
+
+Using an Interface for Abstraction:
+
+The vehicle1 interface is defined with three method signatures: startEngine(), stopEngine(), and move(). These methods serve as the common interface for any class that implements this interface.
+The Car1 class implements the vehicle1 interface. It provides concrete implementations of all the methods defined in the interface.
+An additional method test() is defined within the Car1 class, but it is not part of the interface.
+An instance of the Car1 class named toyotaCar is created and used to demonstrate the use of the interface's methods.
+Using an Abstract Class for Abstraction:
+
+An abstract class Car2 is defined with three abstract method declarations: startEngine(), stopEngine(), and move(). Abstract methods in an abstract class serve as placeholders and must be implemented by any class that extends this abstract class.
+The ToyotaCar class extends Car2 and provides concrete implementations for all the abstract methods.
+Similar to the previous example, an additional method test() is defined

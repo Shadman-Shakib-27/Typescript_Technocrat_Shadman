@@ -1,0 +1,50 @@
+The provided TypeScript code demonstrates the use of static members and methods in a class. Let's break it down step by step:
+
+/--------------Start-----------/
+
+Class Definition with Static Members:
+
+class Counter {
+  static count: number = 0;
+
+  static increament() {
+    return (Counter.count = Counter.count + 1);
+  }
+
+  static decreament() {
+    return (Counter.count = Counter.count - 1);
+  }
+}
+
+In the Counter class:
+
+static count: number is a static property, meaning it belongs to the class itself rather than instances of the class. It is initialized with the value 0.
+
+static increament() is a static method that increments the count property by 1 and returns the updated value.
+
+static decreament() is a static method that decrements the count property by 1 and returns the updated value.
+
+/--------------End-----------/
+
+
+
+/--------------Start-----------/
+
+Method Calls and Output:
+
+console.log(Counter.increament());
+console.log(Counter.increament());
+console.log(Counter.increament());
+
+Counter.increament() is called three times. Each time it is called, the count property is incremented by 1, and the updated value is returned.
+
+
+/--------------End-----------/
+
+So, the output will be:
+
+1
+2
+3
+
+Since the count property is static, it is shared among all instances of the Counter class, and any changes made to it are reflected globally across the class. This makes it suitable for keeping track of shared state or performing operations at the class level, as demonstrated in this code.
